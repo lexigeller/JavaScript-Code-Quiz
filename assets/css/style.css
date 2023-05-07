@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 28;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: #380aa2;
+    color: white;
+    cursor: pointer;
+    font-size: 12;
+    border-radius: 3px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  button:hover {
+    opacity: 75%;
+  }
