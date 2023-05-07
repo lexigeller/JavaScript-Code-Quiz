@@ -7,11 +7,72 @@
     <title>JavaScript Code Quiz</title>
 </head>
 <body>
+    <div id="highscores" a href="highscores">View Highscores</div>
     <header>
         <h1 class= "">Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds!</p>
-        <button class="start-button">Start Quiz</button>
+        <button id="start-button">Start Quiz</button>
       </header>
+    <section id="question-1" data-show="show">
+        <h2>Commonly used data types DO NOT include:</h2>
+        <div class="question-options">
+            <button data-answer="incorrect">1. strings</button><br>
+            <button data-answer="incorrect">2. booleans</button><br>
+            <button data-answer="correct">3. alerts</button><br>
+            <button data-answer="incorrect">4. numbers</button><br>
+        </div>
+    </section>
+    <section id="question-2" data-show="hidden">
+        <h2>The condition in an if/else statement is enclosed within _____.</h2>
+        <div class="question-options">
+            <button data-answer="incorrect">1. quotes</button><br>
+            <button data-answer="incorrect">2. curly brackets</button><br>
+            <button data-answer="correct">3. parentheses</button><br>
+            <button data-answer="incorrect">4. square brackets</button><br>
+        </div>
+    </section>
+    <section id="question-3" data-show="hidden">
+        <h2>Arrays in JavaScript can be used to store _____.</h2>
+        <div class="question-options">
+            <button data-answer="incorrect">1. numbers and strings</button><br>
+            <button data-answer="incorrect">2. other arrays</button><br>
+            <button data-answer="incorrect">3. booleans</button><br>
+            <button data-answer="correct">4. all of the above</button><br>
+        </div>
+    </section>
+    <section id="question-4" data-show="hidden">
+        <h2>Sting values must be enclosed within _____ when being assigned to variables.</h2>
+        <div class="question-options">
+            <button data-answer="correct">1. commas</button><br>
+            <button data-answer="incorrect">2. curly brackets</button><br>
+            <button data-answer="incorrect">3. quotes</button><br>
+            <button data-answer="incorrect">4. parentheses</button><br>
+        </div>
+    </section>
+    <section id="question-5" data-show="hidden">
+        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        <div class="question-options">
+            <button data-answer="incorrect">1. JavaScript</button><br>
+            <button data-answer="incorrect">2. terminal/bash</button><br>
+            <button data-answer="incorrect">3. for leaps</button><br>
+            <button data-answer="correct">4. console.log</button><br>
+        </div>
+    </section>
+    <section id="results" data-show="hidden">
+        <h2>All done!</h2>
+        <p id="score">Your final score is</p>
+        <form>
+            <label>Enter initials:</label>
+            <input type="text">
+            <input id="submit-button" type="submit" value="Submit">
+        </form>
+    </section>
+    <section>
+        <h2>Highscores</h2>
+        <div id="initials" data-show="hidden"></div>
+        <button id="go-back">Go Back</button>
+        <button id="clear">Clear Highscores</button>
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>

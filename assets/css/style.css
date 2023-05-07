@@ -1,5 +1,18 @@
-body {
+html {
+    display: block;
     font-family: Arial, Helvetica, sans-serif;
+}
+body {
+   justify-content: center;
+}
+
+/*need to figure out how to align this to the left*/
+#highscores {
+    color: #380aa2;
+}
+
+header {
+    width: 480px;
 }
 
 h1 {
@@ -12,7 +25,7 @@ p {
     text-align: center;
 }
 
-button {
+button, #submit-button {
     background-color: #380aa2;
     color: white;
     cursor: pointer;
@@ -20,8 +33,17 @@ button {
     border-radius: 3px;
     text-align: center;
     width: fit-content;
-  }
+}
 
-  button:hover {
+button:hover {
     opacity: 75%;
-  }
+}
+  
+button:focus {
+    border-style: solid 10px purple;
+}
+
+/*this isn't working. figure out how to align to center*/
+#start-button {
+    align-self: center;
+}
