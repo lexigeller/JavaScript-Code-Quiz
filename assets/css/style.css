@@ -2,17 +2,25 @@ html {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-   justify-content: center;
-}
 
-/*need to figure out how to align this to the left*/
 #highscores {
     color: #380aa2;
 }
 
+#timer {
+    float: right;
+}
+
+body {
+    
+}
+
 header {
     width: 480px;
+}
+
+#start-button {
+    margin-left: 200px;
 }
 
 h1 {
