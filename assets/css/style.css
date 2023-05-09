@@ -43,11 +43,11 @@ button, #submit-button {
     width: fit-content;
 }
 
-button:hover {
+button:hover, #submit-button:hover {
     opacity: 75%;
 }
   
-button:focus {
+button::content {
     border-style: solid 10px purple;
 }
 
