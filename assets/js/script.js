@@ -54,34 +54,6 @@ for(var question of questions){
 //decrease timer for each incorrectly selected question
 //event listeners for all buttons
 
-//copied from 20, investigate/tweak until works
-/*var questionOptions = document.querySelector(".question-options");
-
-questionOptions.addEventListener("click", function(event) {
-  var element = event.target;
-
-  if (element.matches(".")) {
-    var state = element.getAttribute("data-show");
-
-    // Use an if statement to conditionally render the number on the card
-    if (state === "hidden") {
-      // If the card is clicked while the state is "hidden", we set .textContent to the number 
-      element.textContent = element.dataset.number;
-      // Using the dataset property, we change the state to visible because the user can now see the number
-      element.dataset.state = "visible";
-   
-    } else {
-      // 'Hide' the number by setting .textContent to an empty string
-      element.textContent= "";
-      // Use .setAttribute() method
-      element.setAttribute("data-show", "hidden")
-     
-    }  
-  }
-  
-});*/
-
-
 startButton.addEventListener('click', function(e) {
     //tell start button what to do when clicked
 

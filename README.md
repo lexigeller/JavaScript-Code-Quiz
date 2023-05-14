@@ -14,7 +14,7 @@ To take this quiz, open (Javascript Code Quiz](https://lexigeller.github.io/Java
 
 After the quiz ends, a score will be displayed. The score can be logged with initials to a list of highscores. All highscores can be viewed.
 
-![Screenshot](Assets/images/screenshot1.PNG)
+![Screenshot](assets/images/screenshot1.PNG)
 
 ## Credits
 
