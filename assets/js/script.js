@@ -1,4 +1,5 @@
 var timerEl = document.getElementById('timer');
+//commented out startButton to test defined below
 var startButton = document.getElementById('start-button');
 // May not need all of these, not sure yet
 var q1A1Button = document.getElementById('q1a1');
@@ -22,7 +23,8 @@ var q5A2Button = document.getElementById('q5a2');
 var q5A3Button = document.getElementById('q5a3');
 var q5A4Button = document.getElementById('q5a4');
 var goBackButton = document.getElementById('go-back');
-var clearButton = document.getElementById('clear');
+var clearButton = document.querySelector('#clear');
+var questions = document.querySelectorAll(".question-options");
 
 // Timer that counts down from 75
 function timer() {
@@ -45,13 +47,47 @@ function timer() {
 
 timer();
 
+for(var question of questions){
+    question.setAttribute("style", "display: none;")
+}
+
 //decrease timer for each incorrectly selected question
 //event listeners for all buttons
+
+//copied from 20, investigate/tweak until works
+/*var questionOptions = document.querySelector(".question-options");
+
+questionOptions.addEventListener("click", function(event) {
+  var element = event.target;
+
+  if (element.matches(".")) {
+    var state = element.getAttribute("data-show");
+
+    // Use an if statement to conditionally render the number on the card
+    if (state === "hidden") {
+      // If the card is clicked while the state is "hidden", we set .textContent to the number 
+      element.textContent = element.dataset.number;
+      // Using the dataset property, we change the state to visible because the user can now see the number
+      element.dataset.state = "visible";
+   
+    } else {
+      // 'Hide' the number by setting .textContent to an empty string
+      element.textContent= "";
+      // Use .setAttribute() method
+      element.setAttribute("data-show", "hidden")
+     
+    }  
+  }
+  
+});*/
+
+
 startButton.addEventListener('click', function(e) {
     //tell start button what to do when clicked
+
 })
 
-q1A1Button.addEventListener('click', function(e) {
+/*q1A1Button.addEventListener('click', function(e) {
     //tell each question button what to do when clicked?
 })
 
@@ -71,9 +107,16 @@ goBackButton.addEventListener('click', function(e) {
     //tell the go back button to go back to the beginning when clicked
 })
 
-clearButton.addEventListener('click', function(e) {
+clearButton.addEventListener('click', function(event) {
     //tell the clear button to clear the high scores in local storage when clicked
-})
+    event.preventDefault();
+    textAreaEl.value = '';
+  
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].textContent = '';
+    }
+});*/
+  
 //store highscores in local storages
 //need array to show highscores and initials
 //score highscore from highest to lowest
